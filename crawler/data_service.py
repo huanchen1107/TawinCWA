@@ -5,7 +5,7 @@ Provides cached data access and intelligent data refresh
 
 import pandas as pd
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Any
 import logging
 import time
 

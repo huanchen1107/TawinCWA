@@ -11,11 +11,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 def main():
     """Main entry point with error handling for Streamlit Cloud."""
     
-    # Try loading the database-enabled beautiful app first
+    # Try loading the cloud-compatible app first
     try:
-        from beautiful_app_with_db import main as db_main
-        st.info("🌤️ Loading Taiwan Weather Dashboard with Database...")
-        db_main()
+        from streamlit_cloud_app import main as cloud_main
+        st.info("🌤️ Loading Taiwan Weather Dashboard (Cloud Version)...")
+        cloud_main()
         
     except Exception as e:
         st.error(f"❌ Database app failed to load: {e}")
